@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s;
+    overflow-y: scroll; /* Add the ability to scroll */
+    padding: 0px 1em;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#logotype{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1840px;
+    margin: 0 auto;
+}
+
+.img-card{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 3px 4px 3px rgba(213, 43, 30, .8)
+}
+
+.img-card img{
+    width: 100%;
+    transition: all linear 0.9s;
+}
+
+img.hover-to-reveal{
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+}
+
+.img-card:hover img{
+    opacity: 0;
+}
+
+.img-card:hover img.hover-to-reveal{
+    opacity: 1;
+}
+
+#last{
+    margin-bottom: 2em;
+}
