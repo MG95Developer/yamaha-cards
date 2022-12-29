@@ -1,0 +1,35 @@
+/*** MEDIA QUERIES ***/
+
+@media only screen and (min-width: 768px) {
+    #last{
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    #logotype{
+       margin-top: 180px;
+       margin-bottom: 20px;
+       width: 100%;
+       max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1019px) {
+    #last{
+       margin-bottom: 3em;
+    }
+}
+
+
+@media only screen and (max-width: 1240px) {
+    .img-card{
+        position: relative;
+        width: 500px;
+        height: auto;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 5px;
+        box-shadow: none;
+    }
+}
